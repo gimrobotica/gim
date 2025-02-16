@@ -9,15 +9,6 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-zinc-900 to-zinc-800" />
         <div className="absolute inset-0">
 
-          <div className="flex justify-center items-center pt-48">
-            <Image
-               src="/logo/logo_white.png"
-               alt="Logo"
-               width={125}
-               height={125}
-            />
-          </div>
-
           <Image
             src="/background_team.png"
             alt="Makerspace"
@@ -27,6 +18,16 @@ export default function Home() {
           />
         </div>
         <div className="relative z-10 max-w-6xl mx-auto px-4 text-center">
+
+        <div className="flex justify-center items-center">
+            <Image
+               src="/logo/logo_white.png"
+               alt="Logo"
+               width={125}
+               height={125}
+            />
+          </div>
+
           <h1 className="text-6xl font-bold mb-6 tracking-tight">
             Grupo de Iniciação Maker
           </h1>
