@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Grupo de Iniciação Maker - Inovação e Tecnologia',
   description: 'Espaço dedicado à inovação, criatividade e desenvolvimento de projetos educacionais',
+  icons: {
+    icon: "/favicon.ico"
+  }
 };
 
 export default function RootLayout({

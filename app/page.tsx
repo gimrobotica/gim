@@ -1,15 +1,23 @@
 'use client';
-
 import { Lightbulb, Rocket, Settings, Wrench, ChevronRight, Cpu, Brain } from 'lucide-react';
 import Image from 'next/image';
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-zinc-100">
-
       <section className="relative h-screen flex items-center justify-center text-white">
         <div className="absolute inset-0 bg-gradient-to-b from-zinc-900 to-zinc-800" />
         <div className="absolute inset-0">
+
+          <div className="flex justify-center items-center pt-48">
+            <Image
+               src="/logo/logo_white.png"
+               alt="Logo"
+               width={125}
+               height={125}
+            />
+          </div>
+
           <Image
             src="/background_team.png"
             alt="Makerspace"
@@ -27,8 +35,8 @@ export default function Home() {
             Transformando ideias em projetos voltados a competições de robótica
           </p>
 
-          <button className="bg-zinc-200 text-zinc-900 px-8 py-4 rounded-lg font-semibold hover:bg-zinc-100 transition-colors inline-flex items-center gap-2 group">
-            Comece sua jornada!
+          <button className="bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-600 transition-colors inline-flex items-center gap-2 group">
+            Comece sua jornada
             <ChevronRight className="group-hover:translate-x-1 transition-transform" />
           </button>
         </div>
@@ -187,7 +195,7 @@ export default function Home() {
           <p className="text-zinc-300 max-w-2xl mx-auto mb-8">
             Junte-se a outros makers, compartilhe conhecimento, desenvolva projetos inovadores e participe de competições de robótica
           </p>
-          <button className="bg-zinc-200 text-zinc-900 px-8 py-4 rounded-lg font-semibold hover:bg-zinc-100 transition-colors inline-flex items-center gap-2">
+          <button className="bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-600 transition-colors inline-flex items-center gap-2">
             Inscreva-se
             <Rocket className="w-5 h-5" />
           </button>
