@@ -153,6 +153,47 @@ export default function Home() {
 
       <section className="py-24 bg-zinc-900">
         <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-4xl font-bold text-white mb-16 text-center">Eventos Anteriores</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            {[
+              {
+                title: 'IEEE OPEN 2019',
+                description: 'Competição de rôbos autônomos e pesquisa científica voltada a robótica',
+                image: '/competicao-1.png',
+              },
+              {
+                title: 'LARC 2019',
+                description: 'Competição de rôbos autônomos e Internet das Coisas (IoT)',
+                image: '/competicao-2.jpg',
+              },
+              {
+                title: 'Cientec 2015',
+                description: 'Feira de ciências e tecnologia voltada ao público infantil/juvenil',
+                image: '/evento-1.jpg'
+              }
+            ].map((project, index) => (
+              <div key={index} className="group relative overflow-hidden rounded-xl bg-zinc-900">
+                <div className="relative h-[300px]">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 to-transparent opacity-60" />
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 p-8">
+                  <h3 className="text-2xl font-bold text-white mb-2">{project.title}</h3>
+                  <p className="text-zinc-300">{project.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-zinc-800">
+        <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-white mb-16 text-center">Projetos em Destaque</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {[
